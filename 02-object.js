@@ -1,61 +1,61 @@
-// // -- Nomor 1 -- 
-// const person = {
-//     name: "person A",
-//     age: 100,
-//     favDrinks: [
-//       "coffee",
-//       "jamu temulawak",
-//       "tea"
-//     ],
-//     greeting: function(nama) {
-//       return `Hello, ${nama}`
-//     }
-//   }
+// -- Nomor 1 -- 
+const person = {
+    name: "person A",
+    age: 100,
+    favDrinks: [
+      "coffee",
+      "jamu temulawak",
+      "tea"
+    ],
+    greeting: function(nama) {
+      return `Hello, ${nama}`
+    }
+  }
   
-//   /// EDIT HERE
-//   person.name = "Certa Yustitia"
-//   person.favDrinks.splice(person.favDrinks.indexOf('jamu temulawak'), 1, 'tap water')
+  /// EDIT HERE
+  person.name = "Certa Yustitia"
+  person.favDrinks.splice(person.favDrinks.indexOf('jamu temulawak'), 1, 'tap water')
   
-//   /// STOP
+  /// STOP
   
-//   console.log(person.name);
-//   console.log(person.age);
-//   console.log(person.favDrinks);
-//   console.log(person.greeting("John Watson"));
+  console.log(person.name);
+  console.log(person.age);
+  console.log(person.favDrinks);
+  console.log(person.greeting("John Watson"));
 
-// // -- Nomor 2 --
-//   function getObjectValue(obj, path) 
-//   {
-//     let temp = path.split('.')
-//     let result = obj[temp[0]][temp[1]][temp[2]]
+// -- Nomor 2 --
+  function getObjectValue(obj, path) 
+  {
+    let temp = path.split('.')
+    let result = obj[temp[0]][temp[1]][temp[2]]
 
-//     if(result===undefined) return null
-//     else return result
-//   }
+    if(result===undefined) return null
+    else return result
+  }
 
-//   const milkBasedCoffee = {
-//     name: "latte",
-//     ingredients: {
-//       espresso: {
-//         origin: "lampung",
-//         roastProfile: "medium to dark",
-//         ratio: 1
-//       },
-//       milk: {
-//         brand: "susu murni",
-//         isVegan: false,
-//         ratio: 5
-//       }
-//     },
-//   }
+  const milkBasedCoffee = {
+    name: "latte",
+    ingredients: {
+      espresso: {
+        origin: "lampung",
+        roastProfile: "medium to dark",
+        ratio: 1
+      },
+      milk: {
+        brand: "susu murni",
+        isVegan: false,
+        ratio: 5
+      }
+    },
+  }
   
-//   const espresso = getObjectValue(milkBasedCoffee, "ingredients.espresso.origin");
-//   const coffeeBrand = getObjectValue(milkBasedCoffee, "ingredients.espresso.brand");
-//   const isMilkVegan = getObjectValue(milkBasedCoffee, "ingredients.milk.isVegan");
+  const espresso = getObjectValue(milkBasedCoffee, "ingredients.espresso.origin");
+  const coffeeBrand = getObjectValue(milkBasedCoffee, "ingredients.espresso.brand");
+  const isMilkVegan = getObjectValue(milkBasedCoffee, "ingredients.milk.isVegan");
   
-//   console.log(espresso);
-//   console.log(coffeeBrand);
-//   console.log(isMilkVegan)
+  console.log(espresso);
+  console.log(coffeeBrand);
+  console.log(isMilkVegan)
 
   // -- Nomor 3 --
   // dibawah ini merupakan history transasksi yang telah kalian lakukan
